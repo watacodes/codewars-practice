@@ -20,4 +20,4 @@ function positiveSum(arr) {
     return result;
   }
 
-  console.log(positiveSum([]));
+  console.log(positiveSum([2, -3, 3]));
