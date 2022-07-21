@@ -24,15 +24,12 @@ function amIWilson(p) {
     // Write an if/else statement, return true if it passes.
 
     let factorial = 0;
-    let bigNum = BigInt(factorial);
 
     for (let i = 1; i < p; i++) {
       factorial *= i;
     }
 
-    console.log(bigNum);
-    if ((String(bigNum) + 1) % (p * p)) return true;
-
+    if ((factorial + 1) % (p ** 2)) return true;
     return false;
   }
 
