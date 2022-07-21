@@ -22,11 +22,18 @@ function amIWilson(p) {
     // Set a variable that stores a factorized number
     // Set a variable that stores the above formula,
     // Write an if/else statement, return true if it passes.
-    
-    let factorial = 1;
-    for (let i = factorial; i < p; i++) {
+
+    let factorial = 0;
+    let bigNum = BigInt(factorial);
+
+    for (let i = 1; i < p; i++) {
       factorial *= i;
     }
-    const wilsonPrimes = (factorial + 1) / p**2;
-    return Number.isInteger(wilsonPrimes) ? true : false;
+
+    console.log(bigNum);
+    if ((String(bigNum) + 1) % (p * p)) return true;
+
+    return false;
   }
+
+  console.log(amIWilson(11));
