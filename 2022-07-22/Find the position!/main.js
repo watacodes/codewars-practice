@@ -14,6 +14,6 @@ function position(letter){
     // 1. Identify the charcode of letter for an alphabet a
     // 2. the charcode of a - number should be 1.
     // 3. return letter.charCodeAt() - number.
-    let pos = letter.charCodeAt() - 96;
+    const pos = letter.charCodeAt() - 96;
     return `Position of alphabet: ${pos}`;
 }
