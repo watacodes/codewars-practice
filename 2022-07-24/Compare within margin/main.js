@@ -33,3 +33,15 @@ This is because the distance between a and b is greater than 0, and a is less th
 
 */
 
+function closeCompare(a, b, margin = 0){
+    let diff = a - b;
+    if (diff >= 0 && margin >= diff) {
+      return 0;
+    } else if (diff < 0 && margin >= -diff) {
+      return 0;
+    } else if (a < b) {
+      return -1;
+    } else if (a > b) {
+      return 1;
+    }
+}
