@@ -20,3 +20,11 @@ Because you're a nice person, you always round up the tip, regardless of the ser
 
 */
 
+const calculateTip = (fee, rating) => {
+  if (rating.toLowerCase() === 'excellent') return Math.ceil(fee * 0.2);
+  if (rating.toLowerCase() === 'great') return Math.ceil(fee * 0.15);
+  if (rating.toLowerCase() === 'good') return Math.ceil(fee * 0.1);
+  if (rating.toLowerCase() === 'poor') return Math.ceil(fee * 0.05);
+  if (rating.toLowerCase() === 'terrible') return 0;
+  return 'Rating not recognised';
+}
