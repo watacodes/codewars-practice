@@ -14,3 +14,4 @@ As you can see, the lists are cascading; ie, they overlap, but never out of orde
 
 */
 
+const eachCons = (array, n) => array.map((a, b) => array.slice(b, b + n)).filter(x => x.length == n);
