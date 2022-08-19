@@ -16,3 +16,8 @@ Unfortunately, the code is not working as designed. Please fix the code so that 
 
 */
 
+function wrap(value) {
+  let obj = {}
+  obj.value = value;
+  return obj;
+};
