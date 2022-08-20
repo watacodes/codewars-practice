@@ -7,4 +7,4 @@ You are trying to put a hash in ruby or an object in javascript or java into an 
 */
 
 let items = [];
-items.push {a: "b", c: "d"}
+items.push({a: "b", c: "d"});
