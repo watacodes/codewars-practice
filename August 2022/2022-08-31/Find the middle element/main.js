@@ -23,5 +23,5 @@ const gimme = t => {
   let copy = t.slice();
   let find = copy.sort((a, b) => a - b)[1];
   return t.indexOf(find);
-}
+};
 console.log(gimme([2,3,1]));
