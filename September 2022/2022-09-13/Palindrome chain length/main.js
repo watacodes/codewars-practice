@@ -35,5 +35,3 @@ const palindromeChainLength = n => {
   };
   return counter;
 };
-
-console.log(palindromeChainLength(87))
