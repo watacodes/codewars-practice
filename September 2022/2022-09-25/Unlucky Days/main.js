@@ -28,4 +28,4 @@ const unluckyDays = y => {
     };
   };
   return counter;
-};
+};    
