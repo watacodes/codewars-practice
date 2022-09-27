@@ -13,11 +13,11 @@ Examples
 
 */
 
-const stringMerge = (s1, s2, s3) => {
-  s1 = s1.split(s3);
-  s2 = s2.slice(s2.split('').indexOf(s3));
-  console.log(s1, s2)
-  return s1[0] + s2;
-};
+  const stringMerge = (s1, s2, s3) => {
+    s1 = s1.split(s3);
+    s2 = s2.slice(s2.split('').indexOf(s3));
+    console.log(s1, s2)
+    return s1[0] + s2;
+  };
 
 console.log(stringMerge("person","here", "e"))
