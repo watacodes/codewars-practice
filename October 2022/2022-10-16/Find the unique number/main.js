@@ -18,5 +18,3 @@ const findUniq = arr => {
   let last = sortedArray[arr.length - 1];
   return first === second ? last : first;
 }
-
-console.log(findUniq([1,1,1,2,1,1]))
