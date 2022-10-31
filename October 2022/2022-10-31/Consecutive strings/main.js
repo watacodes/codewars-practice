@@ -1,11 +1,11 @@
 /*
 
-Codewars, 7k: Consecutive strings
+Codewars, 6k: Consecutive strings
 
 */
 
 const longestConsec = (arr, k) => {
-  if (arr.length < k || k < 0 || k >= arr.length) return '';
+  if (arr.length < k || k < 0 || k > arr.length) return '';
   if (k === 1) return arr.sort((a, b) => b.length - a.length)[0];
   
   let longestStr = '';
