@@ -19,7 +19,6 @@ const findSenior = arr => {
       oldestArr.push(i);
     }
   }
-  console.log(oldestArr, ageArr);
   return arr.filter((a, i) => oldestArr.includes(i));
 }
 
