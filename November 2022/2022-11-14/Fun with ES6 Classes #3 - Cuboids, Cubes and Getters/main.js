@@ -26,5 +26,3 @@ class Cube extends Cuboid {
     super(length, length, length);
   }
 }
-
-class
