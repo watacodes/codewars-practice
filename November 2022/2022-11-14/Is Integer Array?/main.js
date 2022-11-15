@@ -9,4 +9,4 @@ const isIntArray = arr => {
   return arr.every(a => (typeof a === 'number' || arr.length === 0) && !Number.isNaN(a) && Math.round(a) === a);
 }
 
-console.log([null].every(a => a));
+console.log(isIntArray([1, 2, NaN]));
