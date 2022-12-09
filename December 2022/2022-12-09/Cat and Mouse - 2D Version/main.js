@@ -14,5 +14,5 @@ const catMouse = (map, moves) => {
   const mouseRowIdx = mapArr.findIndex(a => a.includes('m'));
   const mouseColIdx = mapArr[mouseRowIdx].indexOf('m');
   
-  return (mouseColIdx - catColIdx) + (mouseRowIdx - catRowIdx) <= moves ? 'Caught!' : 'Escaped!'; 
+  return Math.abs(mouseColIdx - catColIdx) + Math.abs(mouseRowIdx - catRowIdx) <= moves ? 'Caught!' : 'Escaped!'; 
 }
