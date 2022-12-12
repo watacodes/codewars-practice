@@ -6,22 +6,11 @@ Codewars, 7k: Most sales
 
 const top3 = (products, amounts, prices) => {
   const highestRevenue = [];
-  const indices = [];
-
-  for (let p in amounts) {
-    highestRevenue.push(amounts[p] * prices[p]);
+  for (let i in products) {
+    highestRevenue.push({
+      productName: products[i],
+      price: amounts[i] * prices[i]
+    });
   }
-  
-  const sortedRevenue = highestRevenue.slice(0).sort((a, b) => b - a);
-  
-  for (let k in sortedRevenue) {
-    indices.push(highestRevenue.indexOf(sortedRevenue[k]));
-  }
-  
-  const res = [];
-  
-  for (let i of indices) {
-    res.push(products[i]);
-  }
-  return res.slice(0, 3);
+  return highestRevenue.sort((a, b) => b.price - a.price || products.indexOf(a.productName) - products.indexOf(b.productName)).slice(0, 3).map(a => a.productName);
 }
