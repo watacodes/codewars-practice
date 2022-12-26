@@ -11,3 +11,5 @@ const isSmooth = arr => {
   const middleSum = middle.reduce((acc, curr) => acc + curr, 0);
   return middleSum === arr[0] && middleSum === arr.slice(-1)[0];
 }
+
+console.log(isSmooth([-5, 5, 10]))
