@@ -1,6 +1,6 @@
 /*
 
-Codewars, 6k: One line task: Square Every Digits
+Codewars, 6k: One line task: Square Every Digit
 
 */
 
