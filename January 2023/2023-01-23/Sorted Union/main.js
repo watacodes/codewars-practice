@@ -1,9 +1,10 @@
 /*
 
-Codewars, 7k: Sorted Union
+Codewars, 7k: esreveR gnirtS
 
 */
 
-function uniteUnique(...arrays) {
-  return [...new Set([].concat(...arrays))];
+String.prototype.reverse = function() {
+  const strCopy = this.slice(0);
+  return [...strCopy].reverse().join('');
 }
