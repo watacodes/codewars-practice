@@ -5,7 +5,6 @@ Codewars, 6k: Find the Word Pair!
 */
 
 function compoundMatch(words, target) {
-  const res = [];
 
   for (let i = 1; i < target.length; i++) {
     const [p1, p2] = [target.slice(0, i), target.slice(i, target.length)];
