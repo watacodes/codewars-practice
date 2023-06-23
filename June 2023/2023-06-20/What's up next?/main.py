@@ -8,4 +8,4 @@ def next_item(xs, item):
             return i
         if i == item:
             isFound = True
-    return None
+    return Nonew
