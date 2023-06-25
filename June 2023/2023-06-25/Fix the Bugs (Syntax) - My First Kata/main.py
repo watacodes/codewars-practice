@@ -1,0 +1,7 @@
+# Codewars, 8k: Fix the Bugs (Syntax) - My First Kata
+
+def my_first_kata(a, b):
+    if type(a) != int or type(b) != int:
+        return False
+    else:
+        return (a % b) + (b % a)
